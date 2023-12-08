@@ -1,0 +1,286 @@
+<html>
+ <head>
+  <title>Student Attendance Form </title>
+ </head>
+ <body>
+  <h2>Student Attendance Form</h2>
+  <form action="connect.php" method="post" id="attendanceForm" onsubmit="updateTotalStudents(event)">
+    <fieldset>
+        <legend><b>Student Assignment Submission</b></legend>
+        <center> 
+            <h1><u><b><strong><mark><font color="blue">GOVERNMENT POLYTECHNIC, PALANPUR</font></mark></strong></b></u></h1>
+            <h2><b><u>
+            <font color="red">Information technology</font>
+            </u></b></h2>
+            </center>
+            <label><h1><u><strong><mark><font color="red">*Student Assignment Submission</font></mark></strong></u></h1></label>
+            
+            <label><b>*Subject:</b></label>
+            <select name="drop-down">
+            <option value="sub" name="subject">Communication Skill in English</option>
+            <option value="sub" name="subject">Introduction to I.T. System</option>
+            <option value="sub" name="subject">Maths</option>
+            <option value="sub" name="subject">Python Programming</option>
+            <option value="sub" name="subject">S.W.D.</option>
+            <option value="sub" name="subject">Sport&Yoga</option>
+            </select>
+        
+            <label><b>*Unit(ch.):</b></label>
+            <select name="drop-down">
+                <option value="unit" name="unit">Unit-1</option>
+                <option value="unit" name="unit">Unit-2</option>
+                <option value="unit" name="unit">Unit-3</option>
+                <option value="unit" name="unit">Unit-4</option>
+                <option value="unit" name="unit">Unit-5</option>
+                <option value="unit" name="unit">Unit-6</option>
+            </select>
+            <label><b>*Sem:</b></label>
+            <input type="number" value="1"  name"sem">
+            <label><b>*Branch:</b></label>
+            <input type="text" value="I.T." name="branch"> 
+            <br> 
+            <br> 
+            <label><b>*Subject Code:</b></label> 
+            <select name="drop-down">
+            <option value="sub" name="code">4300002</option>
+            <option value="sub" name="code">4311602</option>
+            <option value="sub" name="code">4300001</option>
+            <option value="sub" name="code">4311601</option>
+            <option value="sub" name="code">4311603</option>
+            <option value="sub" name="code">4300015</option>
+            </select>
+            <label><b>*Date</b></label> 
+            <input type="date" name="date"> 
+            <br><label for="total">Total Students:</label>
+            <input type="text" id="total" name="total" readonly>
+            <br>
+            <br>
+            <hr>
+            <table class="attendance-table" border="2" align="center">
+    <thead>
+     <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>yes</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>1</td>
+      <td>BHAGAT JAYDIP TUSHARKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>2</td>
+      <td>BHARMBEY MOHIT SURESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>3</td>
+      <td>CHAUDARI SMITKUMAR BABUBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>CHAUDARI HAIDARALI HASANALI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>5</td>
+      <td>CHAUDARI HARD DINESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>6</td>
+      <td>CHAUDARI KAJIMALI MAHAMMADALI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>7</td>
+      <td>CHAUHAN JAY ATULBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>8</td>
+      <td>CHAUHAN JAYENDRA KULDIPKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>9</td>
+      <td>CHAUHAN RUSHIL DINESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>10</td>
+      <td>DAVE ATULKUMAR LALABHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>11</td>
+      <td>DAVE ASHISHKUMAR VIRABHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>12</td>
+      <td>DHOBI VIDHIBEN BHAVESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>13</td>
+      <td>KHATRI SUHANI MITULKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>14</td>
+      <td>LUHARIYA AVISHKUMAR LALAJIBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>15</td>
+      <td>MEWADA SRUSHTI BHARATKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>16</td>
+      <td>OAD SHILPABEN BHARATBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>17</td>
+      <td>OAD RUTVIKABEN JAYANTIBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>18</td>
+      <td>PAL KUNDAN NILESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>19</td>
+      <td>PANCHAL HAPPY KALPESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>20</td>
+      <td>PARMAR HARSHKUMAR BHARATBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>21</td>
+      <td>PARMAR JAIMIN RAJNIKANT</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>22</td>
+      <td>PARMAR UTTAM RAJENDRABHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>23</td>
+      <td>PATAL KAVAN KAUSHIKBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>24</td>
+      <td>PATAL KRISHKUMAR SANDIPBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>25</td>
+      <td>PATAL PRINCE ANILBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>26</td>
+      <td>PATAL PURVA JAYESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>27</td>
+      <td>PAVAYA ANSH NARESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>28</td>
+      <td>PRAJAPATI DIVYESHKUMAR MEHULBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>29</td>
+      <td>PRAJAPATI DIXIT KIRTIBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>30</td>
+      <td>PARAJAPATI JAYKUMAR VIKRAMBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>31</td>
+      <td>QURESHI SANIYABANU SAHIDAHAMAD</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>32</td>
+      <td>RAJPUT ARPIT MOHANSINH</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>33</td>
+      <td>SAGAR JANUBEN BHARATBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>34</td>
+      <td>SAHA TANAY MAHESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>35</td>
+      <td>SUTHAR PIYUSHKUMAR BALDEVBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>36</td>
+      <td>TELI PRINCE PRITHVIRAJ</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>37</td>
+      <td>TRIVEDI AYUSH ASHISHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>38</td>
+      <td>TRIVEDI KRISH MAYURKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>39</td>
+      <td>VAGHELA SANJAYKUMAR RAMESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+    </tbody>
+   </table>
+   <input type="reset" name="reset">
+   <input type="submit" value="Submit" name="submit">
+   <h4>
+    *Guidance by : <u>Milav sir</u>
+    <footer>
+        *Written by : <u>Jay Prajapati</u><br>
+        *Roll nu. : <u>30</u>
+    </h4>
+    </footer>
+    </fieldset>
+  </form>
+  <script>
+        function updateTotalStudents(event) {
+            event.preventDefault();
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+
+            document.getElementById('total').value = checkedCheckboxes.length;
+        }
+    </script>
+ </body>
+</html>
